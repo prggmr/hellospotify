@@ -1,0 +1,33 @@
+{
+    "AppDescription": {
+        "en": "HelloWorld!"
+    },
+    "AppName": {
+        "en": "prggmr"
+    },
+    "BundleIdentifier": "prggmr",
+    "BundleType": "Application",
+    "BundleVersion": "0.1",
+    "DefaultTabs": [
+        {
+            "arguments": "helloworld",
+            "title": {
+                "en": "Hello"
+            }
+        },
+        {
+            "arguments": "helloworld2",
+            "title": {
+                "en": "World"
+            }
+        }
+    ],
+    "Dependencies": {
+    },
+    "RequiredInterface": 1,
+    "RequiredPermissions": [],
+    "SupportedLanguages": [
+        "en"
+    ],
+    "VendorIdentifier": "co.prggmr"
+}

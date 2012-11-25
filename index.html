@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <script>
+    window.onload = function() {
+        sp = getSpotifyApi(1);
+        var models = sp.require('sp://import/scripts/api/models');
+
+        tabs();
+        models.application.observe(models.EVENT.ARGUMENTSCHANGED, tabs);
+
+        function tabs() {
+            var args = models.application.arguments;
+            var current = document.getElementById(args[0]);
+            var sections = document.getElementsByClassName('section');
+            for (i=0;i<sections.length;i++) {
+                sections[i].style.display = 'none';
+            }
+            current.style.display = 'block';
+        }
+    }
+    </script>
+    <body>
+        <div id="helloworld" class="section">
+            HelloWorld!
+        </div>
+        <div id="helloworld2" class="section">
+            HelloWorld Again!
+        </div>
+    </body>
+</html>
